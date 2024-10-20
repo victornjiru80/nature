@@ -1,0 +1,124 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+    background: linear-gradient(to right, #041308, #0b3317);
+}
+
+#para-con {
+    color: white;
+    margin: 20px;
+    font-size: 1.2rem;
+}
+/* For screens wider than 768px (tablets, laptops, desktops) */
+@media (min-width: 768px) {
+    #container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: repeat(4, 250px);        
+    }
+    #para-con {
+        font-size: 1.8rem;
+    }  
+    .box {
+        background-size: cover;
+        font-size: 1.8rem;
+        transition: all 1.2s ease-in-out;
+    }
+}
+
+/* For screens wider than 1024px (larger laptops and desktops) */
+@media (min-width: 1024px) {
+    #container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: repeat(4, 300px); 
+    }
+
+    #para-con {
+        font-size: 2rem; 
+        margin: 40px;      
+    }
+    .box {
+        background-size: cover;
+        font-size: 2rem;
+        transition: all 1.3s ease-in-out;
+    }
+}
+
+::selection {
+    color: wheat;
+    background-color: black;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 120px);
+    gap: 8px; 
+    margin: 7px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 0.8rem;
+    background-size: cover;
+    background-position: top;
+    background-blend-mode: multiply;
+    background-color: #222;
+    background-blend-mode: overlay; 
+}
+.row-2 {
+    grid-row: span 2;
+}
+.col-2 {
+    grid-column: span 2;
+}
+
+#box1 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsoSeBnL94iDVGRLS9pZ3j3LyBCmsLMUnmZQztZ_JSPEqrzHl33g6FO_l5&s=10');
+}
+
+#box2 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh5HwY0vKM0Ykp-MlXCuyWkbMympGWWbFNvxP8d04_TEbWakTmv7mGja7I&s=10');
+}
+
+#box3 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRubQnbQb02HIWyXGjqoHkz6rCU793Td9ejfVW0fIEFSkuVgxPYfDqHbgMS&s=10');
+}
+
+#box4 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbM_Y7yFKkYgKPPs9cVYOD677BV3Z6sqevdmiL6mWbrcMlZYwsFuWrgV-S&s=10');
+}
+
+#box5 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwTZ_eyaqtgrK_6jB8UrhlRZGncCl5js0VqzlTfOw8aeUT6fKgm6eEKB1z&s=10');
+}
+
+#box6 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR54E_ox7cHLOu8f-PY7AHtyUeJg3hZD2IYpucpYIdVuJQmReyKh8CVP1sO&s=10');
+}
+
+#box7 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYLUhy-4O4P_8AgZgXz-B-GWWabY-obgKgd1oegDYFKGvU3382RlLuTHU&s=10');
+}
+
+.box:hover {
+    background-position: center bottom;
+    transition: all 1s ease-in-out;
+    background-color: rgba(255,255,255,0.05);
+    background-blend-mode: difference; 
+    filter-brightness: 1.3;
+    box-shadow: 0 0 3px #fff;
+}
+
+#box1:hover, #box4:hover, #box3:hover, #box6:hover {
+    background-position: right bottom;
+}
