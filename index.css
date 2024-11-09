@@ -19,6 +19,7 @@
 
 
 /* For screens wider than 768px (tablets, laptops, desktops) */
+
 @media (min-width: 768px) {
     #container {
         display: grid;
