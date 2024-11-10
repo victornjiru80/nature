@@ -21,11 +21,13 @@
 /* For screens wider than 768px (tablets, laptops, desktops) */
 
 @media (min-width: 768px) {
+
     #container {
         display: grid;
         grid-template-columns: repeat(3, 1fr); 
         grid-template-rows: repeat(4, 250px);        
     }
+
     #para-con {
         font-size: 1.8rem;
     }  
